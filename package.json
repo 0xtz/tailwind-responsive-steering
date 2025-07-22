@@ -27,14 +27,16 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build",
+    "ci": "npm run build && npm run lint && npm run test",
     "lint": "biome check .",
-    "format": "biome check --write"
+    "format": "biome check --write",
+    "test": "vitest run"
   },
   "license": "MIT",
   "packageManager": "pnpm@10.10.0",
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   }
 }
