@@ -1,0 +1,40 @@
+{
+  "name": "tailwind-responsive-steering",
+  "version": "1.0.0",
+  "description": "A Tailwind CSS plugin for simplified responsive design, allowing multiple classes to be applied at specific breakpoints using a concise syntax like md-[text-lg flex].",
+  "keywords": [
+    "tailwindcss",
+    "tailwind",
+    "responsive",
+    "design",
+    "responsive-design",
+    "tailwind-responsive-design",
+    "tailwind-plugin"
+  ],
+  "homepage": "https://github.com/0xtz/tailwind-responsive-steering",
+  "bugs": {
+    "url": "https://github.com/0xtz/tailwind-responsive-steering/issues"
+  },
+  "author": "0xtz <0xtz.52@gmail.com> (https://0xtz.me)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xtz/tailwind-responsive-steering.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "lint": "biome check .",
+    "format": "biome check --write"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "@biomejs/biome": "2.1.2",
+    "typescript": "^5.8.3"
+  }
+}
